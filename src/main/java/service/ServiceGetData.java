@@ -5,12 +5,11 @@ import modelos.Persona;
 
 import java.util.List;
 
-public class ServiceReadPersona {
+public class ServiceGetData {
 
     DaoPersona dao = new DaoPersona();
 
-    public List<Persona> readPersona(){
+    public List<Persona> getData() {
         return dao.getListaPersona();
     }
-
 }

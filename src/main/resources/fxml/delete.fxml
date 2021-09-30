@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="deleteItems" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #eeeeee;"
+            xmlns="http://javafx.com/javafx/11.0.2"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerDelete">
+    <children>
+        <Label layoutX="214.0" layoutY="67.0" text="Delete Persona" textFill="#000000b9">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="233.0" layoutY="109.0" text="Elige la persona a borrar" textFill="#000000be">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Button layoutX="43.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="519.0" text="DELETE" onAction="#deletePersona">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <ListView fx:id="personaBox" layoutX="43.0" layoutY="128.0" prefHeight="200.0" prefWidth="519.0" />
+    </children>
+</AnchorPane>
